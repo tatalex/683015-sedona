@@ -96,7 +96,37 @@
   				</div>
   			</section>
   			<section class="map-and-form">
-  				<form class="search-form"></form>
+  				<form class="search-form" action="https://echo.htmlacademy.ru" method="post">
+             <p class="search-item">
+               <label for="date-entry">Дата заезда:</label>
+               <input id="date-entry" type="text" name="date-entry" value="" placeholder="24 апреля 2017">
+               <span class="icon-calendar"></span>
+             </p>
+             <p class="search-item">
+               <label for="date-departure">Дата выезда:</label>
+               <input id="date-departure" type="text" name="date-departure" value="" placeholder="4 июля 2017">
+               <span class="icon-calendar"></span>
+             </p> 
+             <p class="search-item">
+               <label for="grownup-group">Взрослые:</label>
+               <button type="button" name="minus">
+                 <span class="icon-minus"></span>
+               </button>
+               <input id="grownup-group" type="text" name="grownup" value="2">
+               <button type="button" name="plus">
+                 <span class="icon-plus"></span>
+               </button>
+               <label for="children-group">Дети:</label>
+               <button type="button" name="minus">
+                 <span class="icon-minus"></span>
+               </button>
+               <input id="children-group" type="text" name="children" value="0">
+               <button type="button" name="plus">
+                 <span class="icon-plus"></span>
+               </button>
+             </p>
+             <button class="button" type="submit">Найти</button>  
+          </form>
   				<div class="search-map"></div>
   			</section>
   		</main>
@@ -108,7 +138,10 @@
   					<a class="footer-social icon-facebook" href="#">Facebook</a>
   					<a class="footer-social icon-youtube" href="#">Youtube</a>
   			<div class="main-footer-logo">
-  				<a href="https://htmlacademy.ru/intensive/htmlcss"><span>Website by</span><img src="img/logo-htmlacademy.svg" width="115" height="41" alt="Логотип академии"></a>
+  				<a href="https://htmlacademy.ru/intensive/htmlcss">
+            <span>Website by</span>
+            <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="Логотип академии">
+          </a>
   			</div>
   		</footer>
   	</div>
