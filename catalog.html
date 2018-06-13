@@ -23,8 +23,39 @@
       <main>
         <section class="filters">
           <h1 class="visually-hidden">Фильтры поиска гостиницы</h1>
-          <form class="filter-selection">
-            
+          <form class="filter-selection" action="https://echo.htmlacademy.ru" method="post">>
+            <fieldset>
+              <legend>Инфраструктура:</legend>
+              <input id="pool" type="checkbox" name="pool" value="Бассейн" checked>
+              <label for="pool">Бассейн</label>
+              <input id="parking" type="checkbox" name="parking" value="Парковка">
+              <label for="parking">Парковка</label>
+              <input id="wifi" type="checkbox" name="wifi" value="Wi-Fi">
+            </fieldset>
+              <label for="wifi">Wi-Fi</label>
+            <fieldset>
+              <legend>Тип жилья:</legend>
+              <input id="hotel" type="checkbox" name="hotel" value="Гостиница" checked>
+              <label for="hotel">Гостиница</label>
+              <input id="motel" type="checkbox" name="motel" value="Мотель" checked>
+              <label for="motel">Мотель</label>
+              <input id="apartments" type="checkbox" name="apartments" value="Апартаменты" checked>
+              <label for="apartments">Апартаменты</label>
+            </fieldset>
+            <fieldset>
+              <legend>Стоимость в сутки (р):</legend>
+              <label for="price-from">От</label>
+              <input id="price-from" type="text" name="from" value="0">
+               <label for="price-to">До</label>
+              <input id="price-to" type="text" name="to" value="3000">
+              <div class="controls">
+                <label>
+                  <input type="range" name="radio">
+                  <button type="button" name="controls"><span class="icon-control"></span></button>
+                </label>
+              </div>
+              <button class="button" type="submit">Показать</button>
+            </fieldset>
           </form>
         </section>
         <section class="search-parameter">
