@@ -30,9 +30,18 @@ body {
 
   background-color: #f2f2f2;
 }
+
 a {
   text-decoration: none;
 }
+
+.nav-list,
+.advantage-list,
+.characteristic-list,
+.toggle-list {
+	list-style: none;
+}
+
 .main-nav {
   line-height: 26px;
   font-weight: 700;
@@ -40,3 +49,20 @@ a {
 
   background-color: #ffffff;
 }
+
+.nav-list a,
+.info-more,
+.footer-logo a {
+	color: #000000;
+}
+
+.nav-list a:hover,
+.info-more:hover {
+	color: #81b3d2;
+}
+
+.nav-list a:active,
+.info-more:active {
+	color: rgba(0, 0, 0, 0.3); 
+}
+

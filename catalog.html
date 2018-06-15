@@ -3,16 +3,18 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона - Каталог</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="css/normalize.css" rel="stylesheet">
   </head>
   <body>
   	<div class="wrap">
   		<header class="main-header">
   			<nav class="main-nav">
-  				<ul class="main-nav-list">
-  					<li class="main-nav-item"><a href="#">Информация</a></li>
-  					<li class="main-nav-item"><a href="#">Фото и видео</a></li>
-  					<li class="main-nav-item"><a href="#">Карта штата</a></li>
-  					<li class="main-nav-item"><a href="#">Гостиницы</a></li>
+  				<ul class="nav-list">
+  					<li class="nav-item"><a href="#">Информация</a></li>
+  					<li class="nav-item"><a href="#">Фото и видео</a></li>
+  					<li class="nav-item"><a href="#">Карта штата</a></li>
+  					<li class="nav-item"><a href="#">Гостиницы</a></li>
   				</ul>
   				<div class="main-logo">
   					<a class="main-header-logo" href="index.html"><img src="img/logo-header.png" width="138" height="70" alt="Логотип"></a>
@@ -63,14 +65,14 @@
           <span>Найдено: 3</span> 
           <div class="search-characteristic">
             <span>Сортировка:</span>
-            <ul>
+            <ul class="characteristic-list">
               <li class="characteristic-item"><a class="active-current">По цене</a></li>
               <li class="characteristic-item"><a href="#">По типу</a></li>
               <li class="characteristic-item"><a href="#">По рейтингу</a></li>
             </ul>
-            <ul class="search-toggle-list">
-              <li><a href="#"><span class="search-toggle-up"></span></a></li>
-              <li><a><span class="search-toggle-down current"></span></a></li>
+            <ul class="toggle-list">
+              <li><a href="#"><span class="toggle-up"></span></a></li>
+              <li><a><span class="toggle-down current"></span></a></li>
             </ul>
           </div>
         </section>
@@ -80,7 +82,7 @@
               <img src="img/hotels-1.jpg" width="135" height="90" alt="Фото гостиницы Amara Resort & Spa">
             </div>
             <div class="results-info">
-              <h3 class="results-info-title">Amara Resort & Spa</h3>
+              <a class="info-more" href="#">Amara Resort & Spa</a>
               <div>
                 <span>Гостиница</span>
                 <a href="#" class="btn more">Подробнее</a>
@@ -107,7 +109,7 @@
               <img src="img/hotels-2.jpg" width="135" height="90" alt="Фото мотеля Desert Quail Inn">
             </div>
             <div class="results-info">
-              <h3 class="results-info-title">Desert Quail Inn</h3>
+              <a class="info-more" href="#">Desert Quail Inn</a>
               <div>
                 <span>Мотель</span>
                 <a href="#" class="btn more">Подробнее</a>
@@ -133,7 +135,7 @@
               <img src="img/hotels-3.jpg" width="135" height="90" alt="Фото апартаментов Villas at Poco Diablo">
             </div>
             <div class="results-info">
-              <h3 class="results-info-title">Villas at Poco Diablo</h3>
+              <a class="info-more" href="#">Villas at Poco Diablo</a>
               <div>
                 <span>Апартаменты</span>
                 <a href="#" class="btn more">Подробнее</a>
