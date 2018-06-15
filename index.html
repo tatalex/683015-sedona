@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
   </head>
   <body>
   	<div class="wrap">
@@ -20,7 +23,7 @@
   			</nav>
   		</header>
 
-  		<main>
+  		<main class="page">
   			<section class="welcome-part">
   				<h1 class="visually-hidden">Sedona сервис по поиску жилья в городе</h1>
   				<img class="welcome-part-title" src="img/welcome-text.png" width="458" height="352" alt="Welcome to the gorgeous Sedona">
@@ -92,7 +95,7 @@
   				<div class="search-info">
   					<p class="search-title">Заинтересовались?</p>
   					<p class="search-text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
-  					 <a class="search-btn" href="#">Поиск гостиницы в седоне</a>
+  					 <button type="button" name="search-button">Поиск гостиницы в седоне</button>
   				</div>
   			</section>
   			<section class="map-and-form">
@@ -125,7 +128,7 @@
                  <span class="icon-plus"></span>
                </button>
              </p>
-             <button class="button" type="submit">Найти</button>  
+             <a class="search-hotel" href="#">Найти</a>  
           </form>
   				<div class="search-map"></div>
   			</section>
