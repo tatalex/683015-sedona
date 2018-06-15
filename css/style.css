@@ -100,3 +100,34 @@ a {
 	line-height: 26px;
 	color: #000000;
 }
+
+.advantage-text {
+	width: 400px;
+	height: 256px;
+}
+
+.first .advantage-text,
+.second .advantage-text {
+	color: #ffffff;
+
+	background-color: #81b3d2;
+
+}
+
+.advantage-title {
+	font-size: 21px;
+	font-weight: 700px;
+	line-height: 21px;
+	color: #000000;
+}
+
+.first .advantage-title,
+.second .advantage-title {
+	color: #ffffff;
+}
+
+.advantage.third-fifth {
+	width: 1200px;
+	height: 256px;
+	background-color: #eeeeee;
+}
