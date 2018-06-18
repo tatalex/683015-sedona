@@ -239,6 +239,7 @@ a.search-hotel:active {
 .search-map {
 	width: 1200px;
 	height: 748px;
+
 	background-color: #cbdda9;
 	background-image: url("../img/map.jpg");
 	background-repeat: no-repeat;
@@ -249,3 +250,62 @@ a.search-hotel:active {
 	line-height: 21px;
 	text-decoration: none;
 }
+
+section.filters  {
+	width: 1200px;
+	height: 562px;
+	color: #ffffff;
+
+	background-color: #44719a;
+	background-image: url("../img/filter-background.jpg");
+}
+
+.filter-selection fieldset {
+ 	border: none;
+}
+
+.filter-selection legend {
+	font-size: 16px;
+	font-weight: 700;
+}
+
+input[id="price-from"],
+input[id="price-to"] {
+	color: #ffffff;
+	border: none;
+	background-color: transparent;
+}
+
+button.button {
+	color: #ffffff;
+	font: inherit;
+
+	border: 2px solid #ffffff;
+	background-color: transparent;
+}
+
+ul.characteristic-list a {
+	color: rgba(0, 0, 0, 0.3);
+	font-size: 12px;
+	line-height: 18px;
+	text-decoration: none;
+}
+
+.characteristic-item a {
+	border-bottom: 1px dashed #81b3d2;
+}
+
+.characteristic-item a:hover {
+	color: #81b3d2;
+}
+
+.characteristic-item a:active {
+	color: #000000;
+	border: none;
+}
+
+.characteristic-item a.active-current {
+	color: #81b3d2;
+	border: none;
+}
+
