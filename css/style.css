@@ -352,14 +352,28 @@ a.social:hover {
 	background-color: #669ec0;
 }
 
-a.social:active { 
+a.social:active,
+a.social:active path { 
+ 	fill: #88b6d1;
 	background-color: #5496bd;
 }
 
-svg#Layer_1.logo-academy:hover {
-	fill: red;
-	stroke: red;
+.logo-academy:hover path,
+.logo-academy:hover rect {
+	fill: #88b6d1;
+}
 
+.logo-academy:active path,
+.logo-academy:active rect {
+	fill: #bdbbbc;
+}
+
+span.stars-icon {
+	width: 18px;
+	height: 17px;
+	background-color: red;
+	background-image: url("../img/star.svg");
+	background-repeat: no-repeat;
 }
 
 
