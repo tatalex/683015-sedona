@@ -162,7 +162,7 @@ a {
 	background-color: #ffffff;
 }
 
-.search-module button {
+.search-module button[name="search-button"] {
 	padding: 0;
 	color: #ffffff;
 	font-size: 21px;
@@ -174,11 +174,13 @@ a {
 	border: none;
 }
 
-.search-module button:hover {
+.search-module button[name="search-button"]:hover,
+a.btn.book:hover {
 	background-color: #604e43;
 }
 
-.search-module button:active {
+.search-module button[name="search-button"]:active,
+a.btn.book:active {
 	color: rgba(255, 255, 255, 0.3);
 	background-color: #503e33;
 }
@@ -200,6 +202,17 @@ a {
 
 	background-color: #f2f2f2;
 	border: none;
+}
+
+.search-form input[name="date-entry"]:hover,
+.search-form input[name="date-departure"]:hover {
+	background-color: #ebebeb;
+}
+
+.search-form input[name="date-entry"]:active,
+.search-form input[name="date-departure"]:active {
+	background-color: transparent;
+	border: 2px solid #e5e5e5;
 }
 
 .search-item input {
@@ -226,11 +239,13 @@ a.search-hotel {
 	border: none;
 }
 
-a.search-hotel:hover {
+a.search-hotel:hover,
+a.btn:hover {
 	background-color: #669ec0;
 }
 
-a.search-hotel:active {
+a.search-hotel:active,
+a.btn:active {
 	color: rgba(255, 255, 255, 0.3);
 
 	background-color: #5496bd;
@@ -308,4 +323,43 @@ ul.characteristic-list a {
 	color: #81b3d2;
 	border: none;
 }
+
+a.btn {
+	color: #ffffff;
+	font-weight: 700;
+	background-color: #81b3d2;
+	text-decoration: none;
+}
+
+a.btn.book {
+	background-color: #766357;
+}
+
+.rating-total span {
+	color: #666666;
+	background-color: #f2f2f2;
+}
+
+a.social {
+	display: inline-block;
+	width: 46px;
+	height: 48px;
+
+	background-color: #89b8d5;
+}
+
+a.social:hover {
+	background-color: #669ec0;
+}
+
+a.social:active { 
+	background-color: #5496bd;
+}
+
+svg#Layer_1.logo-academy:hover {
+	fill: red;
+	stroke: red;
+
+}
+
 
