@@ -116,6 +116,10 @@ a {
 	color: rgba(0, 0, 0, 0.3); 
 }
 
+a.active-url {
+	color: #766357;
+}
+
 .wrap{
 	min-width: 768px;
 	max-width: 1200px;
@@ -193,7 +197,7 @@ li.advantage-text {
 .advantage-picture {
 	width: 800px;
 	height: 256px;
-	overflow: auto;
+	overflow: hidden;
 }
 
 .second .advantage-text {
@@ -396,18 +400,41 @@ a.btn:active {
 }
 .filters {
 	width: 1200px;
-	height: 562px;
+	min-height: 215px;
 	color: #ffffff;
+	padding: 27px 72px; 
 
 	background-color: #44719a;
 	background-image: url("../img/filter-background.jpg");
+	background-repeat: no-repeat;
+	background-position: top;
+	box-sizing: border-box;
+}
+
+.filter-selection {
+	display: flex;
+	width: 1056px;
 }
 
 .filter-selection fieldset {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	margin: 0;
+	padding: 0;
+	width: 240px;
+	text-align: left;
  	border: none;
 }
 
+.filter-selection fieldset:last-child {
+	margin-left: auto;
+	width: 330px;
+	text-align: right;
+}
+
 .filter-selection legend {
+	margin: 0;
 	font-size: 16px;
 	font-weight: 700;
 }
@@ -426,6 +453,37 @@ button.button {
 	border: 2px solid #ffffff;
 	background-color: transparent;
 }
+
+.search-parameter {
+	display: flex;
+	align-items: baseline; 
+	width: 1200px;
+	min-height: 85px;
+	padding: 30px 72px 10px;
+	box-sizing: border-box;
+	border-bottom: 1px solid #e5e5e5;
+	background-color: #fefefe;
+}
+
+.search-parameter .found {
+	width: 165px;
+	text-align: left;
+}
+
+.search-characteristic{
+	display: flex;
+	width: 895px;
+}
+
+.search-characteristic span {
+	padding-right: 40px;
+}
+
+.characteristic-list {
+	display: flex;
+	justify-content: space-between;
+	width: 240px;
+} 
 
 ul.characteristic-list a {
 	color: rgba(0, 0, 0, 0.3);
@@ -450,6 +508,39 @@ ul.characteristic-list a {
 .characteristic-item a.active-current {
 	color: #81b3d2;
 	border: none;
+}
+
+.results {
+	width: 1200px;
+	background-color: #fefefe;	
+}
+
+.results-item {
+	display: flex;
+	width: 1200px;
+	min-height: 150px;
+	padding: 27px 72px 25px; 
+	box-sizing: border-box;
+	border-bottom: 1px solid #e5e5e5;
+}
+
+.results-item img {
+	width: 135px;
+	height: 90px;
+}
+
+.results-info {
+	text-align: left;
+	padding-left: 30px;
+	width: 395px;
+}
+
+.results-rating {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	margin-left: auto;
+	width: 240px;
 }
 
 a.btn {
