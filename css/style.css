@@ -402,6 +402,7 @@ a.btn.book:active {
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
+	margin-bottom: 54px;
 }
 
 .modal-wrap .search-item {
@@ -430,31 +431,33 @@ button[name="minus"] {
 	bottom: 0;
 	width: 38px;
 	height: 38px;
+	background-color: transparent;
 	border: none;
 }
 
 button[name="plus"] {
-	left: 22%;
+	right: 0%;
 }
 
 button[name="minus"] {
-	right: 30%;
+	left: 48%;
 }
 
-a.search-hotel {
-	padding: 0;
+a.button.highlight{
+	width: 458px;
+	height: 58px;
+	padding: 16px; 
 	color: #ffffff;
 	
-	background-color: #81b3d2;
-	border: none;
+	box-sizing: border-box;
 }
 
-a.search-hotel:hover,
+a.button.highlight:hover,
 a.button:hover {
 	background-color: #669ec0;
 }
 
-a.search-hotel:active,
+a.button.highlight:active,
 a.button:active {
 	color: rgba(255, 255, 255, 0.3);
 
@@ -463,7 +466,7 @@ a.button:active {
 
 .search-map {
 	width: 1200px;
-	height: 475px;
+	height: 473px;
 
 	background-color: #cbdda9;
 	background-image: url("../img/map.jpg");
@@ -638,20 +641,34 @@ a.button.book {
 
 .main-footer {
 	display: flex;
-	justify-content: space-between;
-	padding: 30px 72px;
+	flex-wrap: wrap;
+	padding: 36px 0;
 
 	width: 1200px;
-	min-height: 120px;
 	box-sizing: border-box;
 }
 
 .main-footer div {
-	width: 240px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 400px;
+}
+
+.footer-logo span {
+	margin-right: 9px;
+}
+
+.footer-logo a {
+	width: 115px;
+	height: 41px;
 }
 
 a.social {
-	display: inline-block;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-right: 5px;
 	width: 46px;
 	height: 48px;
 
