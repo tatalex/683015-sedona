@@ -286,8 +286,8 @@ li.advantage-text:last-child::before  {
 
 .search-text {
 	line-height: 24px;
-	margin-top: 25px;
-	margin-bottom: 50px;
+	margin-top: 23px;
+	margin-bottom: 46px;
 }
 .search-title  {
 	font-size: 30px;
@@ -300,17 +300,26 @@ li.advantage-text:last-child::before  {
 	position: absolute;
 	width: 568px;
 	min-height: 395px;
+	padding: 55px;
 	background-color: #ffffff;
+	box-sizing: border-box;
+}
+
+.button {
+	display: inline-block;
+	vertical-align: middle;
+	color: #ffffff;
+	text-transform: uppercase;
+	padding: 3px 17px;
+	border: none;
 }
 
 .search-module button[name="search-button"] {
-	padding: 0;
-	color: #ffffff;
 	font-size: 21px;
 	font-weight: 700;
 	line-height: 26px;
-	text-transform: uppercase;
-
+	padding: 30px 139px;
+	
 	background-color: #766357;
 	border: none;
 }
@@ -326,6 +335,17 @@ a.btn.book:active {
 	background-color: #503e33;
 }
 
+.search-item {
+	margin-top: 0;
+	margin-bottom: 30px;
+	position: relative;
+	box-sizing: border-box;
+}
+
+.search-form label {
+	margin-right: 16px;
+}
+
 .search-form label,
 .search-form input {
 	color: #000000;
@@ -338,10 +358,13 @@ a.btn.book:active {
 .search-form input[name="date-departure"] {
 	width: 346px;
 	height: 38px;
+	padding: 6px 13px; 
 	color: #000000;
 	text-transform: uppercase;
+	text-align: left;
 
 	background-color: #f2f2f2;
+	box-sizing: border-box;
 	border: none;
 }
 
@@ -356,20 +379,66 @@ a.btn.book:active {
 	border: 2px solid #e5e5e5;
 }
 
-.search-item input {
-	width: 38px;
-	text-align: center;
-
-	background-color: #f2f2f2;
-	border: none; 
+.icon-calendar svg {
+	position: absolute;
+	top: 22%;
+	right: 2%;
+	width: 21px;
+	height: 22px;
+	fill: #cacaca;
 }
 
-.search-item button {
-	width: 38px;
-	height: 38px;
+.icon-calendar:hover path,
+.icon-calendar:hover rect{
+	fill: #000000;
+}
 
+.icon-calendar:active path,
+.icon-calendar:active rect{
+	fill: #81b3d2;
+}
+
+.modal-wrap {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.modal-wrap .search-item {
+	margin-bottom: 0;
+}
+
+label[for="grownup-group"] {
+	margin-right: 33px;
+}
+
+input[id="grownup-group"],
+input[id="children-group"] {
+	position: relative;
+	width: 120px;
+	height: 38px;
+	padding: 6px 14px;
+	text-align: center;
 	background-color: #f2f2f2;
 	border: none;
+	box-sizing: border-box;
+}
+
+button[name="plus"],
+button[name="minus"] {
+	position: absolute;
+	bottom: 0;
+	width: 38px;
+	height: 38px;
+	border: none;
+}
+
+button[name="plus"] {
+	left: 22%;
+}
+
+button[name="minus"] {
+	right: 30%;
 }
 
 a.search-hotel {
@@ -381,12 +450,12 @@ a.search-hotel {
 }
 
 a.search-hotel:hover,
-a.btn:hover {
+a.button:hover {
 	background-color: #669ec0;
 }
 
 a.search-hotel:active,
-a.btn:active {
+a.button:active {
 	color: rgba(255, 255, 255, 0.3);
 
 	background-color: #5496bd;
@@ -394,12 +463,12 @@ a.btn:active {
 
 .search-map {
 	width: 1200px;
-	height: 470px;
+	height: 475px;
 
 	background-color: #cbdda9;
 	background-image: url("../img/map.jpg");
 	background-repeat: no-repeat;
-	background-position: 50% 50%;
+	background-position: 50% 57%;
 }
 
 .footer-logo span {
@@ -456,7 +525,6 @@ input[id="price-to"] {
 }
 
 button.button {
-	color: #ffffff;
 	font: inherit;
 
 	border: 2px solid #ffffff;
@@ -552,14 +620,14 @@ ul.characteristic-list a {
 	width: 240px;
 }
 
-a.btn {
+a.button {
 	color: #ffffff;
 	font-weight: 700;
 	background-color: #81b3d2;
 	text-decoration: none;
 }
 
-a.btn.book {
+a.button.book {
 	background-color: #766357;
 }
 
