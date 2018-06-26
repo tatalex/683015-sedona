@@ -207,6 +207,8 @@ li.advantage-text {
 }
 
 .advantage-picture {
+	display: flex;
+	align-items: center;
 	width: 800px;
 	height: 256px;
 	overflow: hidden;
