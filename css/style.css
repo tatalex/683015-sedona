@@ -179,6 +179,7 @@ a.active-url {
 .advantage,
 .advantage-list {
 	display: flex;
+	flex-wrap: wrap;
 	width: 1200px;
 	min-height: 256px;
 	box-sizing: border-box;
@@ -189,12 +190,6 @@ a.active-url {
 	min-height: 256px;
 	padding: 45px 50px;
 	box-sizing: border-box;
-}
-
-li.advantage-text {
-	padding: 0;
-	align-items: center;
-	min-height: 330px;
 }
 
 .advantage-title {
@@ -216,6 +211,11 @@ li.advantage-text {
 
 .second .advantage-text {
 	order: 2;
+	padding: 45px 40px;
+}
+
+.third-fifth .advantage-text {
+	padding: 45px 70.5px;
 }
 
 .first .advantage-text,
@@ -223,14 +223,6 @@ li.advantage-text {
 	color: #ffffff;
 
 	background-color: #81b3d2;
-}
-
-.advantage-title.home,
-.advantage-title.food,
-.advantage-title.souv{
-	position: relative;
-	margin: 0;
-	padding: 165px 60px 25px;
 }
 
 .advantage-description {
@@ -243,36 +235,38 @@ li.advantage-text {
 }
 
 .advantage.third-fifth {
-	width: 1200px;
 	background-color: #eeeeee;
-	margin-bottom: 50px;
 }
 
-.advantage-title.home::before {
+li.advantage-text {
+	position: relative;
+	min-height: 330px;
+	padding: 160px 50px 65px;
+}
+
+li.advantage-text::before {
 	content: "";
+	position: absolute;
+	top: 60px;
+	left: 40%;
 	width: 76px;
 	height: 76px;
-	position: absolute;
+	
+	background-repeat: no-repeat;
+}
+
+li.advantage-text:first-child::before {
 	background-image: url("../img/icon-house.svg");
-	background-repeat: no-repeat;
 }
 
-.advantage-title.food::before {
-	content: "";
-	width: 76px;
-	height: 76px;
-	position: absolute;
+li.advantage-text:nth-child(2)::before {
 	background-image: url("../img/icon-food.svg");
-	background-repeat: no-repeat;
 }
 
-.advantage-title.souv::before {
-	content: "";
-	position: absolute;
-	width: 76px;
-	height: 76px;
+li.advantage-text:last-child::before  {
+	top: 56px;
+	left: 42%;
 	background-image: url("../img/icon-souvenir.svg");
-	background-repeat: no-repeat;
 }
 
 .search-module {
@@ -287,6 +281,7 @@ li.advantage-text {
 	align-items: center;
 	width: 1200px;
 	min-height: 240px;
+	padding-top: 50px;
 }
 
 .search-text {
