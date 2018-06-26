@@ -643,8 +643,8 @@ a.button.book {
 	display: flex;
 	flex-wrap: wrap;
 	padding: 36px 0;
-
 	width: 1200px;
+	background-color: rgba(254, 254, 254, 0.9);
 	box-sizing: border-box;
 }
 
