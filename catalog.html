@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона - Каталог</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link href="css/normalize.css" rel="stylesheet">
   </head>
@@ -46,16 +47,17 @@
             </fieldset>
             <fieldset>
               <legend>Стоимость в сутки (р):</legend>
-              <label for="price-from">От</label>
-              <input id="price-from" type="text" name="from" value="0">
-               <label for="price-to">До</label>
-              <input id="price-to" type="text" name="to" value="3000">
-              <div class="controls">
-                <label>
-                  <input type="range" name="radio">
-                  <button type="button" name="controls"><span class="icon-control"></span></button>
-                </label>
-              </div>
+                <div class="price-controls">
+                  <label class="min-price">от <input type="text" name="min-price" value="0"></label>
+                  <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
+                </div>
+                <div class="range-controls">
+                  <div class="scale">
+                    <div class="bar"></div>
+                  </div>
+                  <div class="range-toggle range-toggle-min"></div>
+                  <div class="range-toggle range-toggle-max"></div>
+                </div>
               <button class="button" type="submit">Показать</button>
             </fieldset>
           </form>

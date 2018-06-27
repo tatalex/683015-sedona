@@ -481,7 +481,7 @@ a.button:active {
 }
 .filters {
 	width: 1200px;
-	min-height: 215px;
+	min-height: 217px;
 	color: #ffffff;
 	padding: 27px 72px; 
 
@@ -503,7 +503,7 @@ a.button:active {
 	align-items: flex-start;
 	margin: 0;
 	padding: 0;
-	width: 240px;
+	width: 255px;
 	text-align: left;
  	border: none;
 }
@@ -511,27 +511,129 @@ a.button:active {
 .filter-selection fieldset:last-child {
 	margin-left: auto;
 	width: 330px;
-	text-align: right;
 }
 
+
 .filter-selection legend {
-	margin: 0;
+	margin-left: 14px;
+	margin-bottom: 10px;
 	font-size: 16px;
 	font-weight: 700;
 }
 
-input[id="price-from"],
-input[id="price-to"] {
-	color: #ffffff;
-	border: none;
-	background-color: transparent;
+.price-controls {
+	position: relative;
+    height: 33px;
+    margin-bottom: 20px;
+    margin-left: 14px;
+
+    font-size: 0;
+
+    border: 2px solid #ffffff;
+    border-radius: 2px;
+}
+
+.price-controls::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    width: 2px;
+    height: 22px;
+
+    background: #ffffff;
+    transform: translate(-50%, -50%);
+}
+
+.price-controls label {
+    display: inline-block;
+
+    font-size: 14px;
+    line-height: 38px;
+    vertical-align: top;
+
+    cursor: pointer;
+}
+
+.price-controls .min-price,
+.price-controls .max-price {
+    width: 90px;
+    padding-left: 65px;
+}
+
+.price-controls input {
+    width: 50px;
+    margin: 0;
+
+    color: inherit;
+    font: inherit;
+
+    background: none;
+    border: none;
+}
+
+.range-controls {
+    position: relative;
+
+    margin-bottom: 32px;
+    margin-left: 14px;
+}
+
+.range-controls .scale {
+    height: 2px;
+
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.range-controls .bar {
+    width: 80%;
+    height: 2px;
+
+    background: #ffffff;
+}
+
+.range-toggle {
+    position: absolute;
+    top: -9px;
+
+    width: 4px;
+    height: 4px;
+
+    background: #ababab;
+    border: 8px solid #ffffff;
+    border-radius: 50%;
+    box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+    cursor: pointer
+}
+
+.range-toggle:hover {
+    background: #1c4f80;
+}
+
+.range-toggle-min {
+    left: 0;
+}
+
+.range-toggle-max {
+    left: 80%;
 }
 
 button.button {
-	font: inherit;
+	display: block;
+    margin: 0 auto;
+    padding: 6px 35px 8px;
 
 	border: 2px solid #ffffff;
 	background-color: transparent;
+	border-radius: 2px;
+    cursor: pointer;
+}
+
+button.button:hover {
+    color: #000000;
+
+    background: #ffffff;
 }
 
 .search-parameter {
@@ -599,7 +701,7 @@ ul.characteristic-list a {
 	display: flex;
 	width: 1200px;
 	min-height: 150px;
-	padding: 27px 72px 25px; 
+	padding: 25px 72px 25px; 
 	box-sizing: border-box;
 	border-bottom: 1px solid #e5e5e5;
 }
