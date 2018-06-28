@@ -412,13 +412,17 @@ a.btn.book:active {
 }
 
 label[for="grownup-group"] {
-	margin-right: 33px;
+	margin-right: 35px;
+}
+
+label[for="children-group"] {
+	margin-right: 25px;
 }
 
 input[id="grownup-group"],
 input[id="children-group"] {
 	position: relative;
-	width: 120px;
+	width: 114px;
 	height: 38px;
 	padding: 6px 14px;
 	text-align: center;
@@ -439,10 +443,30 @@ button[name="minus"] {
 
 button[name="plus"] {
 	right: 0%;
+	top: 5%;
 }
 
 button[name="minus"] {
-	left: 48%;
+	left: 50%;
+}
+
+button[name="minus"].children {
+	left: 37%;
+}
+
+button[name="minus"]::before,
+button[name="plus"]::before,
+button[name="plus"]::after {
+	content: "";
+	display: block;
+	width: 12px;
+	height: 3px;
+	margin: 0 auto;
+	background-color: #a9a9a9;
+}
+
+button[name="plus"]::after {
+    transform: rotate(90deg) translate(-3px);
 }
 
 a.button.highlight{
