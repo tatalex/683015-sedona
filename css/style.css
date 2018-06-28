@@ -92,7 +92,7 @@ img {
 	text-align: left;
 }
 
-.nav-item:nth-child(3){
+.nav-item:nth-child(3) {
 	margin-left: auto;
 }
 
@@ -110,17 +110,17 @@ img {
 }
 
 .nav-list a,
-.info-more {
+.info-more a {
 	color: #000000;
 }
 
 .nav-list a:hover,
-.info-more:hover {
+.info-more a:hover {
 	color: #81b3d2;
 }
 
 .nav-list a:active,
-.info-more:active {
+.info-more a:active {
 	color: rgba(0, 0, 0, 0.3); 
 }
 
@@ -389,12 +389,14 @@ a.btn.book:active {
 }
 
 .icon-calendar:hover path,
-.icon-calendar:hover rect{
+.icon-calendar:hover rect,
+.toggle-up:hover polygon{
 	fill: #000000;
 }
 
 .icon-calendar:active path,
-.icon-calendar:active rect{
+.icon-calendar:active rect,
+.toggle-up:active polygon{
 	fill: #81b3d2;
 }
 
@@ -619,7 +621,7 @@ a.button:active {
     left: 80%;
 }
 
-button.button {
+button.button.filter {
 	display: block;
     margin: 0 auto;
     padding: 6px 35px 8px;
@@ -630,10 +632,10 @@ button.button {
     cursor: pointer;
 }
 
-button.button:hover {
+button.button.filter:hover {
     color: #000000;
 
-    background: #ffffff;
+    background-color: #ffffff;
 }
 
 .search-parameter {
@@ -695,6 +697,32 @@ ul.characteristic-list a {
 .characteristic-item a.active-current {
 	color: #81b3d2;
 	border: none;
+}
+
+.toggle-list {
+	width: 35px;
+	margin-left: auto;
+}
+
+.toggle-list li {
+	position: relative;
+	box-sizing: border-box;
+}
+
+a.toggle-up {
+	position: absolute;
+	top: 2px;
+    left: 0px;
+    width: 10px;
+	height: 11px;
+}
+
+a.toggle-down.current {
+	position: absolute;
+	top: 0px;
+    right: 0px;
+	width: 10px;
+	height: 11px;
 }
 
 .results {
@@ -843,6 +871,3 @@ a.social:active path {
 .logo-academy:active rect {
 	fill: #bdbbbc;
 }
-
-
-
