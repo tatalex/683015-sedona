@@ -469,6 +469,18 @@ button[name="plus"]::after {
     transform: rotate(90deg) translate(-3px);
 }
 
+button[name="minus"]:hover::before,
+button[name="plus"]:hover::before,
+button[name="plus"]:hover::after {
+	background-color: #000000;
+}
+
+button[name="minus"]:active::before,
+button[name="plus"]:active::before,
+button[name="plus"]:active::after {
+	background-color: #81b3d2;
+}
+
 a.button.highlight{
 	width: 458px;
 	height: 58px;
