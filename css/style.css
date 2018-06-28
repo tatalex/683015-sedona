@@ -550,7 +550,7 @@ a.button:active {
     display: inline-block;
 
     font-size: 14px;
-    line-height: 38px;
+    line-height: 30px;
     vertical-align: top;
 
     cursor: pointer;
@@ -559,7 +559,7 @@ a.button:active {
 .price-controls .min-price,
 .price-controls .max-price {
     width: 90px;
-    padding-left: 65px;
+    padding-left: 60px;
 }
 
 .price-controls input {
@@ -640,8 +640,11 @@ button.button:hover {
 	display: flex;
 	align-items: baseline; 
 	width: 1200px;
-	min-height: 85px;
-	padding: 30px 72px 10px;
+	min-height: 90px;
+	padding: 28px 72px 15px;
+
+	font-size: 12px;
+	line-height: 18px;
 	box-sizing: border-box;
 	border-bottom: 1px solid #e5e5e5;
 	background-color: #fefefe;
@@ -658,6 +661,8 @@ button.button:hover {
 }
 
 .search-characteristic span {
+	font-size: 12px;
+	line-height: 18px;
 	padding-right: 40px;
 }
 
@@ -701,28 +706,69 @@ ul.characteristic-list a {
 	display: flex;
 	width: 1200px;
 	min-height: 150px;
-	padding: 25px 72px 25px; 
+	padding: 25px 72px; 
+	text-align: left;
 	box-sizing: border-box;
 	border-bottom: 1px solid #e5e5e5;
 }
 
-.results-item img {
+.results-image {
+	width: 165px;
+}
+
+.results-image img {
 	width: 135px;
 	height: 90px;
 }
 
 .results-info {
-	text-align: left;
-	padding-left: 30px;
-	width: 395px;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	width: 365px;
+}
+
+h3.info-more {
+	margin-top: 0;
+	margin-bottom: 3px;
+}
+
+.about-hotel {
+	display: flex;
+}
+
+.about-hotel span {
+	margin-bottom: 15px;
+}
+
+.wrap-more,
+.wrap-book {
+	display: flex;
+	flex-direction: column;
+	margin-right: 6px;
 }
 
 .results-rating {
 	display: flex;
 	flex-direction: column;
 	align-items: flex-end;
+	justify-content: space-between;
 	margin-left: auto;
 	width: 240px;
+}
+
+.rating-stars {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.stars-icon {
+	width: 18px;
+	height: 17px;
+	margin-left: 5px;
+
+	background-image: url("../img/star.svg");
+	background-repeat: no-repeat;
 }
 
 a.button {
@@ -737,6 +783,7 @@ a.button.book {
 }
 
 .rating-total span {
+	padding: 3px 14px;
 	color: #666666;
 	background-color: #f2f2f2;
 }
