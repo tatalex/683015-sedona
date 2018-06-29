@@ -18,6 +18,7 @@
 }
 
 body {
+	position: relative;
 	margin: 0;
 	padding: 0;
 
@@ -504,12 +505,12 @@ a.button:active {
 
 .search-map {
 	width: 1200px;
-	height: 473px;
+	height: 593px;
 
 	background-color: #cbdda9;
 	background-image: url("../img/map.jpg");
 	background-repeat: no-repeat;
-	background-position: 50% 57%;
+	background-position: 50% 100%;
 }
 
 .footer-logo span {
@@ -857,8 +858,15 @@ a.button.book {
 	flex-wrap: wrap;
 	padding: 36px 0;
 	width: 1200px;
-	background-color: rgba(254, 254, 254, 0.9);
+	background-color: #fefefe;
 	box-sizing: border-box;
+}
+
+.main-footer.index {
+	position: absolute;
+	bottom: 0;
+
+	opacity: 0.9;
 }
 
 .main-footer div {
