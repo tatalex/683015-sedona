@@ -513,11 +513,7 @@ a.button:active {
 	background-position: 50% 100%;
 }
 
-.footer-logo span {
-	color: #000000;
-	line-height: 21px;
-	text-decoration: none;
-}
+
 .filters {
 	width: 1200px;
 	min-height: 217px;
@@ -547,18 +543,73 @@ a.button:active {
  	border: none;
 }
 
-.filter-selection fieldset:last-child {
+fieldset.filters-cost {
 	margin-left: auto;
 	width: 330px;
 }
 
-
-.filter-selection legend {
-	margin-left: 14px;
-	margin-bottom: 10px;
+.infrastructure legend,
+.type-house  legend,
+.filters-cost legend {
 	font-size: 16px;
 	font-weight: 700;
+	margin-bottom: 25px;
 }
+
+.filters-cost legend {
+	margin-left: 14px;
+	margin-bottom: 10px;
+	
+}
+
+.filters-wrap {
+	position: relative;
+	margin-bottom: 25px;
+
+	box-sizing: border-box;
+}
+
+.filters-wrap:last-child {
+	margin-bottom: 0;
+}
+
+.infrastructure label,
+.type-house label {
+	padding-left: 40px;
+	cursor: pointer;
+}
+
+.filters-wrap input[ type="checkbox"] + label::before {
+	content: "";
+	position: absolute;
+	left: 0;
+	width: 23px;
+	height: 23px;
+
+	background-image: url("../img/checkbox-off.svg");
+	background-repeat: no-repeat;
+}
+
+.filters-wrap input[ type="checkbox"]:checked + label::before {
+	content: "";
+	position: absolute;
+	left: 0;
+	width: 27px;
+	height: 23px;
+
+	background-image: url("../img/checkbox-on.svg");
+	background-repeat: no-repeat;
+}
+
+.filters-wrap input[ type="checkbox"]:focus + label::before {
+	outline: thin dotted;
+	outline: 5px auto -webkit-focus-ring-color;
+}
+
+.filters-wrap input[ type="checkbox"]:disabled + label::before {
+	opacity: 0.3;
+}
+
 
 .price-controls {
 	position: relative;
@@ -878,6 +929,9 @@ a.button.book {
 
 .footer-logo span {
 	margin-right: 9px;
+	color: #000000;
+	line-height: 21px;
+	text-decoration: none;
 }
 
 .footer-logo a {

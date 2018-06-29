@@ -27,25 +27,37 @@
         <section class="filters">
           <h1 class="visually-hidden">Фильтры поиска гостиницы</h1>
           <form class="filter-selection" action="https://echo.htmlacademy.ru" method="post">
-            <fieldset>
+            <fieldset class="infrastructure">
               <legend>Инфраструктура:</legend>
-              <input id="pool" type="checkbox" name="pool" value="Бассейн" checked>
-              <label for="pool">Бассейн</label>
-              <input id="parking" type="checkbox" name="parking" value="Парковка">
-              <label for="parking">Парковка</label>
-              <input id="wifi" type="checkbox" name="wifi" value="Wi-Fi">
-              <label for="wifi">Wi-Fi</label>
+              <div class="filters-wrap">
+                <input type="checkbox" id="pool" name="pool" class="visually-hidden" value="Бассейн" checked>
+                <label for="pool">Бассейн</label>
+              </div>
+              <div class="filters-wrap">
+                <input type="checkbox" id="parking" name="parking" class="visually-hidden" value="Парковка">
+                <label for="parking">Парковка</label>
+              </div>
+              <div class="filters-wrap">
+                <input type="checkbox" id="wifi" name="wifi" class="visually-hidden" value="Wi-Fi">
+                <label for="wifi">Wi-Fi</label>
+              </div>
             </fieldset>
-            <fieldset>
+            <fieldset class="type-house">
               <legend>Тип жилья:</legend>
-              <input id="hotel" type="checkbox" name="hotel" value="Гостиница" checked>
-              <label for="hotel">Гостиница</label>
-              <input id="motel" type="checkbox" name="motel" value="Мотель" checked>
-              <label for="motel">Мотель</label>
-              <input id="apartments" type="checkbox" name="apartments" value="Апартаменты" checked>
-              <label for="apartments">Апартаменты</label>
+              <div class="filters-wrap">
+                <input class="visually-hidden" id="hotel" type="checkbox" name="hotel" value="Гостиница" checked>
+                <label for="hotel">Гостиница</label>
+              </div>
+              <div class="filters-wrap">  
+                <input class="visually-hidden" id="motel" type="checkbox" name="motel" value="Мотель" checked>
+                <label for="motel">Мотель</label>
+              </div>
+              <div class="filters-wrap">  
+                <input class="visually-hidden" id="apartments" type="checkbox" name="apartments" value="Апартаменты" checked>
+                <label for="apartments">Апартаменты</label>
+              </div>
             </fieldset>
-            <fieldset>
+            <fieldset class="filters-cost">
               <legend>Стоимость в сутки (р):</legend>
                 <div class="price-controls">
                   <label class="min-price">от <input type="text" name="min-price" value="0"></label>
