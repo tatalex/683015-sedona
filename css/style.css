@@ -271,6 +271,8 @@ li.advantage-text:last-child::before  {
 }
 
 .search-module {
+	position: relative;
+	z-index: 3;
 	width: 568px;
 
 	background-color: #ffffff;
@@ -298,12 +300,17 @@ li.advantage-text:last-child::before  {
 }
 
 .search-form {
+	display: none;
 	position: absolute;
 	width: 568px;
 	min-height: 395px;
 	padding: 55px;
 	background-color: #ffffff;
 	box-sizing: border-box;
+}
+
+.form-show {
+  display: block;
 }
 
 .button {
@@ -513,6 +520,12 @@ a.button:active {
 	background-position: 50% 100%;
 }
 
+.search-map iframe {
+  position: relative;
+  z-index: 1;
+
+  border: none;
+}
 
 .filters {
 	width: 1200px;
@@ -919,6 +932,7 @@ a.button.book {
 
 .main-footer.index {
 	position: absolute;
+	z-index: 2;
 	bottom: 0;
 
 	opacity: 0.9;
