@@ -898,6 +898,10 @@ a.button.book {
 	background-color: #766357;
 }
 
+.rating-total {
+	margin-bottom: 10px;
+}
+
 .rating-total span {
 	padding: 3px 14px;
 	color: #666666;
