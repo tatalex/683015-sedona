@@ -541,6 +541,7 @@ a.btn.book:active
 .search-form input[name='date-entry']:hover,
 .search-form input[name='date-departure']:hover
 {
+	border: 2px solid #ebebeb;
     background-color: #ebebeb;
 }
 
