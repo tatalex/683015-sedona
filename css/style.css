@@ -22,7 +22,7 @@ body {
 	margin: 0;
 	padding: 0;
 
-	font-family: 'PT Sans','Open Sans', sans-serif;
+	font-family: 'PT Sans','Arial', sans-serif;
 	font-size: 14px;
 	font-weight: 400;
 	line-height: 21px;
@@ -129,9 +129,9 @@ a.active-url {
 	color: #766357;
 }
 
-.wrap{
+.wrap {
+	width: 1200px;
 	min-width: 768px;
-	max-width: 1200px;
     margin: 0 auto;
     padding: 0;
     box-shadow: 0 0 15px 0 rgba(0, 1, 1, 0.2);
@@ -264,10 +264,20 @@ li.advantage-text:nth-child(2)::before {
 	background-image: url("../img/icon-food.svg");
 }
 
-li.advantage-text:last-child::before  {
+li.advantage-text:last-child::before {
 	top: 56px;
 	left: 42%;
 	background-image: url("../img/icon-souvenir.svg");
+}
+
+@keyframes show {
+  0% {
+    transform: translateY(-100px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
 }
 
 .search-module {
@@ -277,6 +287,7 @@ li.advantage-text:last-child::before  {
 
 	background-color: #ffffff;
 }
+
 .housing-search {
 	position: relative;
 	display: flex;
@@ -292,7 +303,8 @@ li.advantage-text:last-child::before  {
 	margin-top: 23px;
 	margin-bottom: 46px;
 }
-.search-title  {
+
+.search-title {
 	font-size: 30px;
 	font-weight: 700;
 	line-height: 36px;
@@ -311,6 +323,8 @@ li.advantage-text:last-child::before  {
 
 .form-show {
   display: block;
+
+  animation: show 0.6s;
 }
 
 .button {
@@ -381,30 +395,43 @@ a.btn.book:active {
 	background-color: #ebebeb;
 }
 
-.search-form input[name="date-entry"]:active,
-.search-form input[name="date-departure"]:active {
+.search-form input[name="date-entry"]:focus,
+.search-form input[name="date-departure"]:focus {
 	background-color: transparent;
 	border: 2px solid #e5e5e5;
 }
 
-.icon-calendar svg {
+button.icon-calendar {
+	width: 22px;
+    height: 22px;
+
+    font-size: 0;
+
+    background-color: transparent;
+    border: 0;
+
+    cursor: pointer;
+}
+
+button.icon-calendar {
 	position: absolute;
-	top: 22%;
+	top: 23%;
 	right: 2%;
-	width: 21px;
+	padding: 0;
+	width: 22px;
 	height: 22px;
 	fill: #cacaca;
 }
 
 .icon-calendar:hover path,
 .icon-calendar:hover rect,
-.toggle-up:hover polygon{
+.toggle-up:hover polygon {
 	fill: #000000;
 }
 
 .icon-calendar:active path,
 .icon-calendar:active rect,
-.toggle-up:active polygon{
+.toggle-up:active polygon {
 	fill: #81b3d2;
 }
 
@@ -489,7 +516,7 @@ button[name="plus"]:active::after {
 	background-color: #81b3d2;
 }
 
-a.button.highlight{
+a.button.highlight {
 	width: 458px;
 	height: 58px;
 	padding: 16px; 
@@ -622,7 +649,6 @@ fieldset.filters-cost {
 .filters-wrap input[ type="checkbox"]:disabled + label::before {
 	opacity: 0.3;
 }
-
 
 .price-controls {
 	position: relative;
