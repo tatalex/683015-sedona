@@ -534,7 +534,7 @@ a.btn.book:active
     text-transform: uppercase;
 
     color: #000;
-    border: none;
+    border: 2px solid #f2f2f2;
     background-color: #f2f2f2;
 }
 
@@ -547,7 +547,6 @@ a.btn.book:active
 .search-form input[name='date-entry']:focus,
 .search-form input[name='date-departure']:focus
 {
-    border: 2px solid #e5e5e5;
     background-color: transparent;
 }
 
