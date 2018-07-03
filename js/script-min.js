@@ -1,0 +1,1 @@
+var link=document.querySelector(".button.search"),form=document.querySelector(".search-form"),entery=form.querySelector("[name=date-entry]");link.addEventListener("click",function(e){e.preventDefault(),form.classList.toggle("form-show"),entery.focus()});
